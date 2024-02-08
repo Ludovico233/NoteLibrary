@@ -82,7 +82,7 @@ public class Hello{
 是java提供的基本类库  
 **[java api 文档 ](https://www.matools.com/)   
 2.java 有丰富的基础类库，api文档用于告诉我们如何使用这些类，以及这些类里包含的方法**   
-![](../图片/java类.png)
+![](java类.png)
 ##快捷键   
 ctrl + shift + d(复制上一行到下一行)   
 ctrl + shift + k(删除本行)   
