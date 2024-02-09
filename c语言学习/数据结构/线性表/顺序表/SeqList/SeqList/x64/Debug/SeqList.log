@@ -1,0 +1,47 @@
+﻿  SeqList.c
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(13,21): error C2143: 语法错误: 缺少“)”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(13,21): error C2143: 语法错误: 缺少“{”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(13,21): error C2059: 语法错误:“&”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(13,24): error C2059: 语法错误:“)”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(20,22): error C2143: 语法错误: 缺少“)”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(20,22): error C2143: 语法错误: 缺少“{”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(20,22): error C2059: 语法错误:“&”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(20,25): error C2059: 语法错误:“)”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(29,25): error C2143: 语法错误: 缺少“)”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(29,25): error C2143: 语法错误: 缺少“{”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(29,25): error C2059: 语法错误:“&”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(29,28): error C2059: 语法错误:“)”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(42,6): error C2061: 语法错误: 标识符“ListInsret”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(42,6): error C2059: 语法错误:“;”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(42,23): error C2059: 语法错误:“<parameter-list>”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(61,6): error C2061: 语法错误: 标识符“ListDelete”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(61,6): error C2059: 语法错误:“;”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(61,23): error C2059: 语法错误:“<parameter-list>”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(80,6): error C2061: 语法错误: 标识符“GetElem”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(80,6): error C2059: 语法错误:“;”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(80,20): error C2059: 语法错误:“<parameter-list>”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(94,23): error C2143: 语法错误: 缺少“)”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(94,23): error C2143: 语法错误: 缺少“{”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(94,23): error C2059: 语法错误:“&”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(94,26): error C2059: 语法错误:“)”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(111,6): error C2061: 语法错误: 标识符“PrintList”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(111,6): error C2059: 语法错误:“;”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(111,22): error C2059: 语法错误:“<parameter-list>”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(122,24): error C2143: 语法错误: 缺少“)”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(122,24): error C2143: 语法错误: 缺少“{”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(122,24): error C2059: 语法错误:“&”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(122,27): error C2059: 语法错误:“)”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(137,18): error C2143: 语法错误: 缺少“)”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(137,18): error C2143: 语法错误: 缺少“{”(在“&”的前面)
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(137,18): error C2059: 语法错误:“&”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(137,21): error C2059: 语法错误:“)”
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(147,2): warning C4013: “InitList”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(148,2): warning C4013: “WriteList”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(149,2): warning C4013: “PrintList”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(150,2): warning C4013: “IncreaseSize”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(151,2): warning C4013: “ListInsret”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(153,2): warning C4013: “ListDelete”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(155,2): warning C4013: “GetElem”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(156,2): warning C4013: “LocateElem”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(157,12): warning C4013: “Length”未定义；假设外部返回 int
+E:\c语言学习\数据结构\线性表\顺序表\SeqList\SeqList\SeqList.c(159,2): warning C4013: “DestroyList”未定义；假设外部返回 int

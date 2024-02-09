@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\任意插入",
+    "\\任意插入\\InsertAny",
+    "\\头插法",
+    "\\头插法\\InsertLinkList",
+    "\\头插法\\InsertLinkList\\InsertLinkList",
+    "\\迭代实现链表反转",
+    "\\迭代实现链表反转\\ReverseList",
+    "\\递归实现链表反转",
+    "\\递归实现链表反转\\RecursionsReverseList"
+  ],
+  "SelectedNode": "\\头插法\\InsertLinkList\\InsertLinkList\\InsertLinkList.c",
+  "PreviewInSolutionExplorer": false
+}
