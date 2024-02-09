@@ -55,8 +55,50 @@
 ---
 github：代码托管仓库之一 （gitlab，gitee....）
 
-- 流程
-	- 注册账号
-	- 创建仓库
-	- 本地代码推送到github仓库
+1. github最初使用
+	- 流程
+		- 注册账号
+		- 创建仓库
+		- 本地代码推送到github仓库
+	
+	- 命令
+		- 给远程仓库起别名(origin)
+			- `git remote add origin 远程仓库地址`
+		- 向远程推送代码
+			- `git push -u origin 分支`
+		- 克隆远程仓库代码
+			- `git clon 远程仓库地址`（内部已实现 git remote add origin 远程仓库地址）
 
+2. 去到公司拉取到自己本地，继续开发
+	- 切换分支到dev
+		- `git checkout dev`
+	- 将master分支合并到dev分支（仅一次）
+		- `git merge master`
+	- 修改代码并提交
+		- `git add .`
+		- `git commit -m xx`
+		- `git push origin dev`
+
+3. 回到家要拉取仓库最新版本，继续开发
+	- 切换到dev分支，继续开发
+		- `git checkout dev`
+	- 拉取更新后的代码
+		- `git pull origin dev`
+	- 继续开发，提交代码
+		- `git add .`
+		- `git commit -m xx`
+		- `git push origin dev`(如果时git push -u xx：表示默认提交到xx地址)
+
+流程：切换到dev(开发)分支，先拉取(pull)代码，再推(push)代码
+
+4. 开发完毕，准备上线
+	- 将dev分支合并到master分支，并上线
+		- `git checkout master`
+		- `git merge dev`
+		- `git push origin master`
+	- 还要将本地更新后的dev分支推送到github仓库
+		- `git checkout dev`
+		- `git merge master`
+		- `git push origin dev`
+
+5. 创建
