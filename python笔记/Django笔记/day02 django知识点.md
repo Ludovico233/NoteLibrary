@@ -190,7 +190,7 @@ def article(request):
 - 在django1版本用的多。
 - 在django2+版本用的少
 
-![image-20220626103534535](image-20220626103534535.png)
+![image-20220626103534535](assets/image-20220626103534535.png)
 
 
 
@@ -200,7 +200,7 @@ def article(request):
 
 inlucde + app（一般），将功能拆分不到不同的app中。
 
-![image-20220626105027266](image-20220626105027266.png)
+![image-20220626105027266](assets/image-20220626105027266.png)
 
 
 
@@ -333,9 +333,9 @@ urlpatterns = [
 
   
 
-![image-20220626142656240](image-20220626142656240.png)
+![image-20220626142656240](assets/image-20220626142656240.png)
 
-![image-20220626143129040](image-20220626143129040.png)
+![image-20220626143129040](assets/image-20220626143129040.png)
 
 
 
@@ -419,13 +419,13 @@ url = reverse("x2:auth")    # /web/login/
   ```
 
 - 手动分发
-  ![image-20220626145020707](image-20220626145020707.png)
+  ![image-20220626145020707](assets/image-20220626145020707.png)
 
 
 
 赠送：
 
-![image-20220626145624565](image-20220626145624565.png)
+![image-20220626145624565](assets/image-20220626145624565.png)
 
 
 
@@ -471,7 +471,7 @@ path('login', views.login),
 
 ### 3.5 当前匹配对象
 
-![image-20220626151042970](image-20220626151042970.png)
+![image-20220626151042970](assets/image-20220626151042970.png)
 
 
 
@@ -482,7 +482,7 @@ path('login', views.login),
 某用户，具有一些权限。   permissions = ["login",'account']
 ```
 
-![image-20220626151524165](image-20220626151524165.png)
+![image-20220626151524165](assets/image-20220626151524165.png)
 
 
 
@@ -537,17 +537,17 @@ path('login', views.login),
 
 ### 4.1 文件or文件夹
 
-![image-20220626154246243](image-20220626154246243.png)
+![image-20220626154246243](assets/image-20220626154246243.png)
 
 
 
-![image-20220626154404724](image-20220626154404724.png)
+![image-20220626154404724](assets/image-20220626154404724.png)
 
 
 
 ### 4.2 相对和绝对导入urls
 
-![image-20220626154723460](image-20220626154723460.png)
+![image-20220626154723460](assets/image-20220626154723460.png)
 
 注意实现：不要再项目根目录做相对导入。
 
@@ -723,7 +723,7 @@ def login(request):
 - FBV，视图用函数的形式编写。**（目前主流）**
 - CBV，视图用类的形式编写。
 
-![image-20220626174330406](image-20220626174330406.png)
+![image-20220626174330406](assets/image-20220626174330406.png)
 
 请注意，这一些都是表象，本质一模一样。
 
@@ -828,9 +828,9 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 ```
 
-![image-20220626181505349](image-20220626181505349.png)
+![image-20220626181505349](assets/image-20220626181505349.png)
 
-![image-20220626181515182](image-20220626181515182.png)
+![image-20220626181515182](assets/image-20220626181515182.png)
 
 
 

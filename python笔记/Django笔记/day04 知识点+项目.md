@@ -293,7 +293,7 @@ DATABASES = {
   router = ["DemoRouter"]
   ```
 
-  ![image-20220710104821310](image-20220710104821310.png)
+  ![image-20220710104821310](assets/image-20220710104821310.png)
 
   
 
@@ -338,7 +338,7 @@ DATABASES = {
   python manage.py migrate app02 --database=bak
   ```
 
-  ![image-20220710105925961](image-20220710105925961.png)
+  ![image-20220710105925961](assets/image-20220710105925961.png)
 
 - 读写操作
 
@@ -362,7 +362,7 @@ DATABASES = {
 
 - router
 
-  ![image-20220710110711518](image-20220710110711518.png)
+  ![image-20220710110711518](assets/image-20220710110711518.png)
 
   
 
@@ -374,7 +374,7 @@ DATABASES = {
 
 100张表，50表-A数据库；50表-B数据库。
 
-![image-20220710111923985](image-20220710111923985.png)
+![image-20220710111923985](assets/image-20220710111923985.png)
 
 
 
@@ -396,7 +396,7 @@ def index(request):
     return HttpResponse("返回")
 ```
 
-![image-20220710112344681](image-20220710112344681.png)
+![image-20220710112344681](assets/image-20220710112344681.png)
 
 
 
@@ -411,7 +411,7 @@ def index(request):
   尽可能的将有关联的表放在一个库中。
   ```
 
-  ![image-20220710112908647](image-20220710112908647.png)
+  ![image-20220710112908647](assets/image-20220710112908647.png)
 
 - 为什么表拆分到不同的库？
 
@@ -430,10 +430,10 @@ def index(request):
 
 - 一对多
 
-  ![image-20220710115245095](image-20220710115245095.png)
+  ![image-20220710115245095](assets/image-20220710115245095.png)
 
 - 多对多
-  ![image-20220710115902277](image-20220710115902277.png)
+  ![image-20220710115902277](assets/image-20220710115902277.png)
 
   如果关系表中只有3列。
 
@@ -498,7 +498,7 @@ def index(request):
   	- 开通博客  地址/
   ```
 
-  ![image-20220710121216875](image-20220710121216875.png)
+  ![image-20220710121216875](assets/image-20220710121216875.png)
 
   
 
@@ -527,7 +527,7 @@ def index(request):
   # obj.save()
   ```
 
-  ![image-20220710143537101](image-20220710143537101.png)
+  ![image-20220710143537101](assets/image-20220710143537101.png)
 
   ```python
   # models.Role.objects.all().delete()
@@ -679,11 +679,11 @@ def index(request):
   # models.Admin.objects.filter(id=2).update(depart__title="技术部")  -> 只能更新自己表字段
   ```
 
-  ![image-20220710164040495](image-20220710164040495.png)
+  ![image-20220710164040495](assets/image-20220710164040495.png)
 
 - 多对多
 
-  ![image-20220710170440957](image-20220710170440957.png)
+  ![image-20220710170440957](assets/image-20220710170440957.png)
 
   ```
   from django.db import models
@@ -749,7 +749,7 @@ def index(request):
 
 
 - 一对一
-  ![image-20220710173043956](image-20220710173043956.png)
+  ![image-20220710173043956](assets/image-20220710173043956.png)
 
 
 
@@ -783,7 +783,7 @@ def index(request):
 
 ### 2.1 cookie
 
-![image-20220710174352897](image-20220710174352897.png)
+![image-20220710174352897](assets/image-20220710174352897.png)
 
 
 
@@ -792,7 +792,7 @@ def index(request):
 127.0.0.1       v2.wupeiqi.com
 ```
 
-![image-20220710175925008](image-20220710175925008.png)
+![image-20220710175925008](assets/image-20220710175925008.png)
 
 
 
@@ -952,7 +952,7 @@ def index(request):
 
 ## 4.项目《订单平台》
 
-![image-20220710184409818](image-20220710184409818.png)
+![image-20220710184409818](assets/image-20220710184409818.png)
 
 ### 4.1 核心功能
 
