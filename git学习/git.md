@@ -1,5 +1,4 @@
 ## 1. 快速入门
----
 版本控制流程：创建文件夹 -> 初试化 -> 管理 -> 生成版本
 
 - 创建文件夹
@@ -15,7 +14,6 @@
 | git log | 查看版本信息 |
 
 ## 2. 回滚
----
 - 回滚之前版本
 	- `git log`  查看版本号
 	- `git reset --hard 版本号` 回滚到版本号的版本
@@ -28,7 +26,6 @@
 
 
 ## 3. 分支
----
 | 命令                    | 解释                     |
 |:----------------------- |:------------------------ |
 | git branch              | 查看当前分支             |
@@ -39,7 +36,6 @@
 
 
 ## 4. git工作流
----
 工作时至少保留两个分支 --> master（主分支），dev（开发分支）
 
 - master分支
@@ -51,7 +47,6 @@
 ![git简单工作流](../statics/img/git简单工作流.png "git简单工作流")
 
 ## 5. github
----
 github：代码托管仓库之一 （gitlab，gitee....）
 
 1. github最初使用
@@ -110,7 +105,6 @@ git merge origin/dev  --> 版本库拉到工作区
 
 
 ## 6. rebase(变基)
----
 使git记录变得简洁
 
 - 情况一：合并commit记录
@@ -135,7 +129,6 @@ git log --graph --pretty=fomate:"%h %s"
 注：如果rebase过程中产生冲突，解决冲突后`git rebase --continue`继续进行变基操作
 
 ## 7. beyond compare 快速解决冲突
----
 前期准备：
 1. 安装beyond compare
 2. 在git中配置
@@ -149,8 +142,7 @@ git log --graph --pretty=fomate:"%h %s"
 	 `git mergetool`
 
 
-## 8. 总结
----
+## 8. 阶段总结
 | 命令                         | 解释                      |
 |:---------------------------- |:------------------------- |
 | `git remote add origin 地址` | 添加远程连接（取别名）    |
@@ -160,3 +152,11 @@ git log --graph --pretty=fomate:"%h %s"
 | `git rebase ...`             | 变基，使提交记录简洁      |
 | `git log --graph --pretty=format:"%h %s"`                             | 记录图形显示                          |
 
+## 9. 多人协同开发（gitflow工作流）
+![多人协同工作流](../statics/img/多人协同工作流.png)
+
+注：
+这是标准工作流（gitflow工作流）
+很多公司可能会忽略，release（预上线，测试），code review（代码审查）
+
+### 9.1 创建初试项目和版本
