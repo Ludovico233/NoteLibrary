@@ -28,7 +28,6 @@
 
 
 ## 3. 分支
-
 ---
 | 命令                    | 解释                     |
 |:----------------------- |:------------------------ |
@@ -101,4 +100,63 @@ github：代码托管仓库之一 （gitlab，gitee....）
 		- `git merge master`
 		- `git push origin dev`
 
-5. 创建
+
+```
+git pull origin dev   --> 远程仓库拉到工作区
+       ||（等于）
+git fetch origin dev  --> 远程仓库拉到本地版本库
+git merge origin/dev  --> 版本库拉到工作区
+```
+
+
+## 6. rebase(变基)
+---
+使git记录变得简洁
+
+- 情况一：合并commit记录
+	- `git rebase -i 版本号` 从版本号的记录开始 --> 最新记录合并
+	- `git rebase -i HEAD~数字`从最新记录开始合并 数字 个记录
+	- 修改合并信息 pick -> s
+	- 修改提交信息
+- 情况二：强行将其他分支记录合并到master分支上，强行插入
+	- `git rebase master` ：切换到dev分支时操作
+	- `git merge dev`：切换回master分支
+	- 
+- 情况三：多端修改时，一端忘记push，之后的合并产生分叉的情况
+	- `git push` == `git fetch` + `git merge`/ `git rebase 分支名`将分叉解决
+
+附加命令：
+```
+git log --graph --pretty=fomate:"%h %s"
+# --graph 线性显示记录（更加美观）
+# ---pretty=fomate:"%h %s" 格式化输出（hash值 和 提交信息）
+```
+
+注：如果rebase过程中产生冲突，解决冲突后`git rebase --continue`继续进行变基操作
+
+## 7. beyond compare 快速解决冲突
+---
+前期准备：
+1. 安装beyond compare
+2. 在git中配置
+	 ```
+	 git config --local merge.tool bc3 // 取名 bc3
+	 git config --local mergetool.path '路径（bin/bcomp）'
+	 git config --local merge tool.keepBackup false   //不用保留源文件
+	 // --local 只在本项目有效
+	 ```
+3. 应用beyond compare 解决冲突
+	 `git mergetool`
+
+
+## 8. 总结
+---
+| 命令                         | 解释                      |
+|:---------------------------- |:------------------------- |
+| `git remote add origin 地址` | 添加远程连接（取别名）    |
+| `git push origin dev`        | 推送代码                  |
+| `git clone 地址`             | 下载代码                  |
+| `git pull origin dev`        | 拉取代码  = fetch + merge |
+| `git rebase ...`             | 变基，使提交记录简洁      |
+| `git log --graph --pretty=format:"%h %s"`                             | 记录图形显示                          |
+
