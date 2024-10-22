@@ -4,14 +4,14 @@
 - 创建文件夹
 - 在文件夹中右键打开`git bash` 
 
-| 命令 | 解释 |
-| :--- | :--- |
-| git init | 文件初试化，即：让git管理当前文件夹 |
-| git status | 查看git当前 管理/未管理 的文件。绿色(已管理)，红色(未管理) |
-| git add file_name | 添加文件被git管理，file_name = . 即：所有文件添加管理 |
-| git config --global user.email "邮箱"<br>git config --globle user.name "姓名" | 个人信息配置：邮箱，用户名【仅需开始第一次】 |
-| git commit -m '描述信息' | 本地提交，生成一个版本 |
-| git log | 查看版本信息 |
+| 命令                                                                        | 解释                                  |
+| :------------------------------------------------------------------------ | :---------------------------------- |
+| git init                                                                  | 文件初试化，即：让git管理当前文件夹                 |
+| git status                                                                | 查看git当前 管理/未管理 的文件。绿色(已管理)，红色(未管理)  |
+| git add file_name                                                         | 添加文件被git管理，file_name = . 即：所有文件添加管理 |
+| git config --global user.email "邮箱"<br>git config --globle user.name "姓名" | 个人信息配置：邮箱，用户名【仅需开始第一次】              |
+| git commit -m '描述信息'                                                      | 本地提交，生成一个版本                         |
+| git log                                                                   | 查看版本信息                              |
 
 ## 2. 回滚
 - 回滚之前版本
@@ -160,3 +160,45 @@ git log --graph --pretty=fomate:"%h %s"
 很多公司可能会忽略，release（预上线，测试），code review（代码审查）
 
 ### 9.1 创建初试项目和版本
+创建第一个版本，并上线
+1. 本地创建
+	```
+	mkdir 文件夹
+	touch 文件
+	git init
+	git add .
+	git commit -m '提交信息'
+	```
+2. 推送github
+	```
+	git remote add origin 地址  // 仓库代号叫 origin
+	git push -u origin master
+	```
+3. 邀请合作者
+	1. 方法一（个人）
+		1. settings 中 collaborators 添加合作者
+		2. 对方会收到邮件，同意即可
+	2. 方法二（公司）
+		1. 创建组织（create an organization）
+		2. 邀请成员
+		3. 在组织中创建项目（统一管理，分配权限）
+4. 添加版本(tag)
+```
+git tag -a v1 -m '版本描述'   // 将本次提交记录打上标签 v1
+git push origin --tags       // 远端推送标签
+```
+
+### 9.2 邀请成员
+1. 创建dev分支
+```
+git chackout -b dev   // 创建dev分支并切换到dev分支
+git push origin dev   // 提送到远程
+```
+2. 添加成员
+3. 设置权限
+	- settings中的member privileges
+	- 项目权限也可以设置
+### 9. 3 代码review
+用 github 上的 pull/merge request 完成
+1. 配置
+	1. settings 中 branches   --> require pull request reviews before merging
