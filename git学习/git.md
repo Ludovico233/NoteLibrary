@@ -4,14 +4,14 @@
 - 创建文件夹
 - 在文件夹中右键打开`git bash` 
 
-| 命令 | 解释 |
-| :--- | :--- |
-| git init | 文件初试化，即：让git管理当前文件夹 |
-| git status | 查看git当前 管理/未管理 的文件。绿色(已管理)，红色(未管理) |
-| git add file_name | 添加文件被git管理，file_name = . 即：所有文件添加管理 |
-| git config --global user.email "邮箱"<br>git config --globle user.name "姓名" | 个人信息配置：邮箱，用户名【仅需开始第一次】 |
-| git commit -m '描述信息' | 本地提交，生成一个版本 |
-| git log | 查看版本信息 |
+| 命令                                                                        | 解释                                  |
+| :------------------------------------------------------------------------ | :---------------------------------- |
+| git init                                                                  | 文件初试化，即：让git管理当前文件夹                 |
+| git status                                                                | 查看git当前 管理/未管理 的文件。绿色(已管理)，红色(未管理)  |
+| git add file_name                                                         | 添加文件被git管理，file_name = . 即：所有文件添加管理 |
+| git config --global user.email "邮箱"<br>git config --globle user.name "姓名" | 个人信息配置：邮箱，用户名【仅需开始第一次】              |
+| git commit -m '描述信息'                                                      | 本地提交，生成一个版本                         |
+| git log                                                                   | 查看版本信息                              |
 
 ## 2. 回滚
 - 回滚之前版本
@@ -22,7 +22,7 @@
 	- `git reset --hard 版本号` 回滚
 
 
-![git命令](../statics/img/git命令.png "git命令")
+![git命令](git命令.png "git命令")
 
 
 ## 3. 分支
@@ -44,7 +44,7 @@
 	- 在此分支上做开发，添加性能/修改代码
 	- 测试没有问题，可合并到主分支上
 
-![git简单工作流](../statics/img/git简单工作流.png "git简单工作流")
+![git简单工作流](git简单工作流.png "git简单工作流")
 
 ## 5. github
 github：代码托管仓库之一 （gitlab，gitee....）
@@ -61,7 +61,7 @@ github：代码托管仓库之一 （gitlab，gitee....）
 		- 向远程推送代码
 			- `git push -u origin 分支`
 		- 克隆远程仓库代码
-			- `git clon 远程仓库地址`（内部已实现 git remote add origin 远程仓库地址）
+			- `git clone 远程仓库地址`（内部已实现 git remote add origin 远程仓库地址）
 
 2. 去到公司拉取到自己本地，继续开发
 	- 切换分支到dev
@@ -143,14 +143,14 @@ git log --graph --pretty=fomate:"%h %s"
 
 
 ## 8. 阶段总结
-| 命令                         | 解释                      |
-|:---------------------------- |:------------------------- |
-| `git remote add origin 地址` | 添加远程连接（取别名）    |
-| `git push origin dev`        | 推送代码                  |
-| `git clone 地址`             | 下载代码                  |
-| `git pull origin dev`        | 拉取代码  = fetch + merge |
-| `git rebase ...`             | 变基，使提交记录简洁      |
-| `git log --graph --pretty=format:"%h %s"`                             | 记录图形显示                          |
+| 命令                                        | 解释                    |
+| :---------------------------------------- | :-------------------- |
+| `git remote add origin 地址`                | 添加远程连接（取别名）           |
+| `git push origin dev`                     | 推送代码                  |
+| `git clone 地址`                            | 下载代码                  |
+| `git pull origin dev`                     | 拉取代码  = fetch + merge |
+| `git rebase ...`                          | 变基，使提交记录简洁            |
+| `git log --graph --pretty=format:"%h %s"` | 记录图形显示                |
 
 ## 9. 多人协同开发（gitflow工作流）
 ![多人协同工作流](../statics/img/多人协同工作流.png)
@@ -159,4 +159,8 @@ git log --graph --pretty=fomate:"%h %s"
 这是标准工作流（gitflow工作流）
 很多公司可能会忽略，release（预上线，测试），code review（代码审查）
 
-### 9.1 创建初试项目和版本
+gitflow 工作流总结：
+1. 第一次进入公司，git clone代码到本地
+2. 自己写代码，需要切换到dev分支做提交
+3. 多人协同会出现，冲突情况，解决冲突，最后提交
+4. 然后第二天准备继续写代码时，先拉取最新的代码到本地，继续开发，剩下步骤同上
