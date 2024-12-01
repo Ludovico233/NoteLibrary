@@ -1,3 +1,0 @@
-﻿  Queue.c
-E:\c语言学习\数据结构\队列\链表实现\Queue\Queue\Queue.c(16): warning C4716: “GetNewNode”: 必须返回一个值
-  Queue.vcxproj -> E:\c语言学习\数据结构\队列\链表实现\Queue\x64\Debug\Queue.exe
